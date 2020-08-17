@@ -1,0 +1,30 @@
+.icon{
+    max-width: 32vh;
+    display: block;
+    margin: 0 auto;
+}
+
+ion-input, ion-item{
+    --background: transparent;
+}
+ion-content{
+    --background: aliceblue;
+}
+
+.text-danger{
+    color: #cf3c4f;
+}
+
+.logos{
+    margin-right: 15px;
+  }
+ion-button{
+    width: 230px;
+    height: 45px;
+    font-size: 10px;
+    color: #ffffff;
+    --border-radius: 30px !important;
+    --ion-color-btn: #424242;
+    --background: var(--ion-color-btn);
+    font-weight: bold;
+   }
