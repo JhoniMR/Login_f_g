@@ -26,4 +26,20 @@ export class LoginPage implements OnInit {
     })
   }
 
+  loginGoogle(){
+    this.authService.loginWithGoogle().then( () =>{
+      this.router.navigate(['/home']);
+    }).catch(err => {
+      alert('Algo salio mal con el login de Google');
+    })
+  }
+
+  loginFacebook(){
+    this.authService.loginWithFacebook().then(res => {
+      this.router.navigate(['/home']);
+    }).catch(err =>{
+      alert('Algo salio mal con el login de facebook')
+    })
+  }
+
 }

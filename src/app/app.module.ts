@@ -15,6 +15,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";  //Modulo de authent
 import { AngularFireModule } from "@angular/fire";            //Modulo para inicializar y que todo funcione bien vergas
 import { firebaseConfig} from "../environments/environment";     // aqui se encuentra una variable de configuracion para inicializar firebase
 
+import { GooglePlus } from '@ionic-native/google-plus/ngx';
+import { Facebook } from '@ionic-native/facebook/ngx'; 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -25,6 +27,8 @@ import { firebaseConfig} from "../environments/environment";     // aqui se encu
   ],
   providers: [
     StatusBar,
+    GooglePlus,
+    Facebook,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
